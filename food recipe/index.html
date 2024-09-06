@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/recipiLogo.jpeg" type="image/x-icon" />
+    <title>Tasty Treats</title>
+    <link rel="stylesheet" href="/food recipe/css/index.css">
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="title">
+        <img src="assets/img/recipiLogo.jpeg" alt="Recipes" />
+        <h1>Tasty Treats</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <div class="content">
+      <section id="home" class="home">
+        <h2>Welcome to Tasty Treats</h2>
+        <p>
+          Discover a world of delicious recipes, tips, and culinary inspiration.
+          Whether you're a seasoned chef or just getting started, we have
+          something for everyone.
+        </p>
+        <div class="video-container">
+          <video
+            src="../food recipe/assets/videos/video.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <video src="assets/videos/video 2.mp4" autoplay muted loop></video>
+          <video src="assets/videos/video3.mp4" autoplay muted loop></video>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+          At Tasty Treats, we are dedicated to bringing you the best culinary
+          experiences. Our platform offers a wide range of recipes, cooking
+          tips, and food-related content to inspire and assist you in the
+          kitchen. We cater to all levels of cooks, from beginners to
+          experienced chefs, ensuring that every recipe is easy to follow and
+          full of flavor.
+        </p>
+        <p>
+          Our team consists of passionate food enthusiasts and professional
+          chefs who work tirelessly to provide high-quality content. We believe
+          in the joy of cooking and the pleasure of sharing great meals with
+          family and friends. Whether you're looking for quick weeknight dinners
+          or elaborate holiday feasts, Tasty Treats has something for everyone.
+        </p>
+        <p>
+          Explore our website to discover new recipes, learn cooking techniques,
+          and find helpful kitchen tips. Join our community and become part of a
+          food-loving family that values delicious food and the happiness it
+          brings.
+        </p>
+      </section>
+
+      <section id="recipes" class="recipes">
+        <h2>Our Recipes</h2>
+        <p>
+          Explore our collection of mouth-watering recipes, from appetizers to
+          desserts. Each recipe is crafted with care to ensure you get the best
+          results every time.
+        </p>
+        <div class="image-gallery">
+          <a href="pages/breakfast.html" class="recipe-card">
+            <img src="assets/img/pancake.jpeg" alt="Delicious Pancakes" />
+            <div class="description">
+              <h3>For Breakfast</h3>
+              <p>
+                A quick and easy recipe for fluffy pancakes that everyone will
+                love.
+              </p>
+            </div>
+          </a>
+          <a href="../food recipe/pages/smoothie.html" class="recipe-card">
+            <img
+              src="../food recipe/imagesSmoothies/blueberry.jpg"
+              alt="Easy Fruit Smoothie"
+            />
+            <div class="description">
+              <h3>Easy Smoothie</h3>
+              <p>Light and refreshing.</p>
+            </div>
+          </a>
+          <a href="../food recipe/pages/lunch.html" class="recipe-card">
+            <img
+              src="../food recipe/imagesLunch/spaghetti.jpg"
+              alt="Delicious Spaghetti"
+            />
+            <div class="description">
+              <h3>For Lunch</h3>
+              <p>A long, thin, solid, cylindrical pasta.</p>
+            </div>
+          </a>
+        </div>
+        <div class="image-gallery">
+          <a href="../food recipe/pages/snacks.html" class="recipe-card">
+            <img
+              src="../food recipe/imagesSnacks/patties.jpeg"
+              alt="Delicious snacks"
+            />
+            <div class="description">
+              <h3>Easy Snacks</h3>
+              <p>
+                Delicate, bite-sized treats of different fillings wrapped in a
+                thin layer of dough.
+              </p>
+            </div>
+          </a>
+          <a href="../food recipe/pages/dinner.html" class="recipe-card">
+            <img
+              src="../food recipe/imagesDinner/beans.jpg"
+              alt="Easy Dinner meals"
+            />
+            <div class="description">
+              <h3>Easy Dinner Meals</h3>
+              <p>Deliciously nutty, mildly sweet, and creamy beans.</p>
+            </div>
+          </a>
+          <a href="../food recipe/pages/dessert.html" class="recipe-card">
+            <img
+              src="../food recipe/imagesDessert/mug.jpg"
+              alt="Chocolate mug Cake"
+            />
+            <div class="description">
+              <h3>Chocolate Mug Cake</h3>
+              <p>Cake flavored with melted chocolate, cocoa powder.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or feedback, we'd love to hear from you! You
+          can contact us via the form below or connect with us through our
+          social media channels.
+        </p>
+        <form
+          class="contact-form"
+          action="submit_contact_form.php"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Tasty Treats. All rights reserved.</p>
+      <p>
+        Follow us on
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>, and
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>.
+      </p>
+    </footer>
+  </body>
+</html>
