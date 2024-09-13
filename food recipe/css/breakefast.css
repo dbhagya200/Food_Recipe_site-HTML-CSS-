@@ -9,12 +9,43 @@ body {
     text-align: center;
     background: #82f3a8;
     color: #fff;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 60px 20px;
   }
   .header h1 {
     margin: 0;
     font-size: 2.5rem;
     font-family: serif;
+  }
+  .navbar {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  .navbar .title {
+    width: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .navbar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .navbar h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
   }
   .back-link {
     display: inline-block;
