@@ -6,8 +6,41 @@
     <link rel="icon" href="../assets/img/recipiLogo.jpeg" type="image/x-icon" />
     <title>Dessert Recipes - Tasty Treats</title>
     <link rel="stylesheet" href="/food recipe/css/dessert.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
   </head>
   <body>
+
+    <section class="navbar">
+      <div class="title">
+        <img src="/food recipe/assets/img/recipiLogo.jpeg" alt="Recipes" />
+        <h1>Tasty Treats</h1>
+        
+      </div>
+      <div class="nav-links">
+        <a href="/food recipe/index.html">Home</a>
+        <a href="/food recipe/index.html#about">About</a>
+        <a href="/food recipe/index.html#recipes">Recipes</a>
+        <a href="/food recipe/index.html#contact">Contact</a>
+      </div>
+      <i class="fa fa-bars burger" id="burger" aria-hidden="true" style="color: #2b2929; "></i>
+    </section>
+
+
+    <div class="menu-panel" id="menu-panel-id">
+      <button class="close-btn" id="btn-close">&times;</button>
+      <ul>
+        <li><a href="/food recipe/index.html">Home</a></li>
+                <li><a href="/food recipe/index.html#about">About</a></li>
+                <li><a href="/food recipe/index.html#recipes">Recipes</a></li>
+                <li><a href="/food recipe/index.html#contact">Contact</a></li>
+                
+      </ul>
+    </div>
+
+
     <header class="header">
       <a href="../index.html" class="back-link">Back</a>
       <h1 style="color: darkblue">Dessert Recipes For You</h1>
@@ -189,5 +222,19 @@
         <a href="https://www.twitter.com" target="_blank">Twitter</a>.
       </p>
     </footer>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+  
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
