@@ -6,15 +6,16 @@
     <link rel="icon" href="assets/img/recipiLogo.jpeg" type="image/x-icon" />
     <title>Tasty Treats</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
-    <link rel="stylesheet" href="/css/index.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
     <section class="navbar">
       <div class="title">
         <img src="assets/img/recipiLogo.jpeg" alt="Recipes" />
+
         <h1>Tasty Treats</h1>
       </div>
       <div class="nav-links">
@@ -23,23 +24,23 @@
         <a href="#recipes">Recipes</a>
         <a href="#contact">Contact</a>
       </div>
-      <i class="fa fa-bars burger" id="burger" aria-hidden="true" style="color: #2b2929; "></i>
+      <i
+        class="fa fa-bars burger"
+        id="burger"
+        aria-hidden="true"
+        style="color: #2b2929"
+      ></i>
     </section>
-
 
     <div class="menu-panel" id="menu-panel-id">
       <button class="close-btn" id="btn-close">&times;</button>
       <ul>
         <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#contact">Contact</a></li>
-                
+        <li><a href="#about">About</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-
-
-
 
     <div class="content">
       <section id="home" class="home">
@@ -50,12 +51,7 @@
           something for everyone.
         </p>
         <div class="video-container">
-          <video
-            src="/assets/videos/video.mp4"
-            autoplay
-            muted
-            loop
-          ></video>
+          <video src="/assets/videos/video.mp4" autoplay muted loop></video>
           <video src="assets/videos/video 2.mp4" autoplay muted loop></video>
           <video src="assets/videos/video3.mp4" autoplay muted loop></video>
         </div>
@@ -115,10 +111,7 @@
             </div>
           </a>
           <a href="/pages/lunch.html" class="recipe-card">
-            <img
-              src="/imagesLunch/spaghetti.jpg"
-              alt="Delicious Spaghetti"
-            />
+            <img src="/imagesLunch/spaghetti.jpg" alt="Delicious Spaghetti" />
             <div class="description">
               <h3>For Lunch</h3>
               <p>A long, thin, solid, cylindrical pasta.</p>
@@ -127,10 +120,7 @@
         </div>
         <div class="image-gallery">
           <a href="/pages/snacks.html" class="recipe-card">
-            <img
-              src="/imagesSnacks/patties.jpeg"
-              alt="Delicious snacks"
-            />
+            <img src="/imagesSnacks/patties.jpeg" alt="Delicious snacks" />
             <div class="description">
               <h3>Easy Snacks</h3>
               <p>
@@ -140,20 +130,14 @@
             </div>
           </a>
           <a href="/pages/dinner.html" class="recipe-card">
-            <img
-              src="/imagesDinner/beans.jpg"
-              alt="Easy Dinner meals"
-            />
+            <img src="/imagesDinner/beans.jpg" alt="Easy Dinner meals" />
             <div class="description">
               <h3>Easy Dinner Meals</h3>
               <p>Deliciously nutty, mildly sweet, and creamy beans.</p>
             </div>
           </a>
           <a href="/pages/dessert.html" class="recipe-card">
-            <img
-              src="/imagesDessert/mug.jpg"
-              alt="Chocolate mug Cake"
-            />
+            <img src="/imagesDessert/mug.jpg" alt="Chocolate mug Cake" />
             <div class="description">
               <h3>Chocolate Mug Cake</h3>
               <p>Cake flavored with melted chocolate, cocoa powder.</p>
@@ -197,16 +181,15 @@
       </p>
     </footer>
 
-
     <script>
       const burger = document.getElementById("burger");
       const menuPanel = document.getElementById("menu-panel-id");
       const closeBtn = document.getElementById("btn-close");
-  
+
       burger.addEventListener("click", () => {
         menuPanel.classList.toggle("active");
       });
-  
+
       closeBtn.addEventListener("click", () => {
         menuPanel.classList.remove("active");
       });

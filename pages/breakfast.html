@@ -7,16 +7,15 @@
     <title>Breakfast Recipes - Tasty Treats</title>
     <link rel="stylesheet" href="/css/breakefast.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <section class="navbar">
       <div class="title">
         <img src="/assets/img/recipiLogo.jpeg" alt="Recipes" />
         <h1>Tasty Treats</h1>
-        
       </div>
       <div class="nav-links">
         <a href="/index.html#home">Home</a>
@@ -24,22 +23,23 @@
         <a href="/index.html#recipes">Recipes</a>
         <a href="/index.html#contact">Contact</a>
       </div>
-      <i class="fa fa-bars burger" id="burger" aria-hidden="true" style="color: #2b2929; "></i>
+      <i
+        class="fa fa-bars burger"
+        id="burger"
+        aria-hidden="true"
+        style="color: #2b2929"
+      ></i>
     </section>
-
 
     <div class="menu-panel" id="menu-panel-id">
       <button class="close-btn" id="btn-close">&times;</button>
       <ul>
         <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html#about">About</a></li>
-                <li><a href="/index.html#recipes">Recipes</a></li>
-                <li><a href="/index.html#contact">Contact</a></li>
-                
+        <li><a href="/index.html#about">About</a></li>
+        <li><a href="/index.html#recipes">Recipes</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
       </ul>
     </div>
-
-
 
     <header class="header">
       <a href="../index.html" class="back-link">Back</a>
@@ -147,16 +147,15 @@
       </p>
     </footer>
 
-
     <script>
       const burger = document.getElementById("burger");
       const menuPanel = document.getElementById("menu-panel-id");
       const closeBtn = document.getElementById("btn-close");
-  
+
       burger.addEventListener("click", () => {
         menuPanel.classList.toggle("active");
       });
-  
+
       closeBtn.addEventListener("click", () => {
         menuPanel.classList.remove("active");
       });
